@@ -7,16 +7,11 @@ int main (){
     char stack[MAX];
     int top = -1;
     scanf("%s", input);
-    if (input == "a"||"b"||"c"||"d"||"e"||"f"||"g"||"h"||"j"||"k"||"l"||"m"||"n"||"o"||"p"||"q"||"r"||"s"||"t"||"u"||"v"||"w"||"x"||"y"||"z"){
-        if (input == "[" && input == "]"){
-            printf ("VALID");
-        } else if (input == "{" && input == "}"){
-            printf ("VALID");
-        } else if (input == "(" && input == ")"){
-            printf ("VALID");
-        } else {
-            printf ("INVALID");
-        }
+    if (input == "a"||"b"||"c"||"d"||"e"||"f"||"g"||"h"||"j"||"k"||"l"||"m"||"n"||
+    "o"||"p"||"q"||"r"||"s"||"t"||"u"||"v"||"w"||"x"||"y"||"z"||
+    input == "[" && input == "]" || input == "{" && input == "}" ||
+    input == "()" && input == ")"){
+        printf ("VALID");
     } else {
         printf ("INVALID");
     }
